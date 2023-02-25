@@ -1,23 +1,19 @@
 ---
-import { Icon } from "astro-icon";
-import ThemeSwitcher from "~/components/theme-switcher.astro";
 import type { NavItem } from "~/types";
 
 const navItems: Array<NavItem> = [
-  { title: "Features", url: "#features" },
-  { title: "Compatibility", url: "#compatibility" },
-  { title: "Showcase", url: "#showcase" },
+  { title: "About", url: "#about" },
+  { title: "Media", url: "#media" },
+  { title: "Contact", url: "#contact" },
 ];
 ---
 
 <header
   id="page-header"
-  class="absolute bottom-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
+  class="absolute top-0 z-20 flex w-full items-center justify-between border-b border-transparent px-8 py-4 text-white"
 >
   <a class="flex items-center gap-3 hover:!text-default" href="#">
-    <h1 class="sr-only">Astro</h1>
-    <Icon name="logomark" class="h-10" />
-    <Icon name="wordmark" class="hidden h-4 sm:block" />
+    <h1>Qualia Ensemble</h1>
   </a>
   <div>
     <div class="flex items-center gap-6">
@@ -34,17 +30,17 @@ const navItems: Array<NavItem> = [
           }
         </ul>
       </nav>
-      <button
+      <!-- <button
         id="open-nav-button"
         type="button"
         class="btn sm:hidden"
         aria-label="Navigation"
       >
         <Icon pack="mdi" name="menu" class="h-8" />
-      </button>
-      <ThemeSwitcher />
+      </button> -->
+      <!-- <ThemeSwitcher /> -->
     </div>
-    <div id="menu-modal" class="modal hidden" aria-hidden="true">
+    <!-- <div id="menu-modal" class="modal hidden" aria-hidden="true">
       <div class="fixed inset-0 bg-default px-8 py-4 text-default">
         <div class="space-y-4" role="dialog" aria-modal="true">
           <header class="text-right">
@@ -75,7 +71,7 @@ const navItems: Array<NavItem> = [
           </nav>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </header>
 
