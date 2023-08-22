@@ -5,8 +5,7 @@ import About from "~/components/about.astro";
 import Header from "~/components/header.astro";
 import Intro from "~/components/intro.astro";
 import Media from "~/components/media.astro";
-import imagel from "~/assets/landscapesm.jpg";
-import imagep from "~/assets/portraitsm.jpg";
+import image from "~/assets/ysl.jpg";
 import "~/styles/index.css";
 
 const { generator, site } = Astro;
@@ -37,15 +36,10 @@ const description = "Melbourne-based duo and chamber music ensemble.";
     <div class="space-y-24 px-8 py-32">
       <Intro />
       <img
-        src={imagep.src}
-        width={imagep.width}
-        height={imagep.height}
-        class="mx-auto h-auto w-full object-scale-down sm:hidden"
-      /><img
-        src={imagel.src}
-        width={imagel.width}
-        height={imagel.height}
-        class="mx-auto hidden h-80 w-auto object-scale-down sm:block"
+        src={image.src}
+        width={image.width}
+        height={image.height}
+        class="mx-auto h-auto w-full object-scale-down"
       />
       <About />
       <Media />
